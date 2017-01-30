@@ -70,18 +70,16 @@
 
 <body>
 
-	<h1>Lexington, Kentucky</h1>
+	<h1>Chicago, Illinois: Grid Your Loins!</h1>
 
 	<div id='map'></div>
 
 	<section>
 		<h2>about this map</h2>
-		<p>Additional information about <a href="#">the data</a> and map goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis urna magna, maximus nec laoreet sit amet, dictum ultricies nibh. Ut id auctor lacus. Nam a dolor et justo luctus luctus.</p>
+		<p><a href="http://www.domu.com/blog/decoding-the-chicago-street-grid-system">Here's</a> how Chicago's grid system works. And <a href="http://afterburnham.com/wp-content/uploads/00a-BurnhamPlan/44-Plate_XLIV.jpg">this is a map</a> of what Chicago could have looked like if <a href="http://www.encyclopedia.chicagohistory.org/pages/10537.html"> Daniel Burnham's 1909 Plan of Chicago</a> had been fully implemented.</p>
 
 		<ul>
-			<li>See my projects on GitHub: <a href="https://github.com/newmapsplus">New Maps Plus</a></li>
-			<li>Follow me on twitter: <a href="https://twitter.com/NewMapsPlus">@NewMapsPlus</a></li>
-			<li>Visit my <a href='#'>mapping portfolio</a>.</li>
+			<li>See my projects on GitHub: <a href="https://github.com/bakker-jesse">Jesse Bakker</a></li>
 		</ul>
 	</section>
 
@@ -91,8 +89,8 @@
 
 		// map options
 		var options = {
-			center: [38.0406, -84.5037], // lat/lon values
-			zoom: 12
+			center: [41.8781, -87.6298], // lat/lon values
+			zoom: 10
 		}
 
 		// create a Leaflet map in our division container with id of 'map'
@@ -106,7 +104,7 @@
 		}).addTo(map);
 
 		// write a custom message for the Leaflet tooltip
-		var message = 'Lexington is awesome!';
+		var message = 'Better than St. Louis!';
 
 		// add a marker to the center of the map and open the tooltip
 		L.marker(map.getCenter())
